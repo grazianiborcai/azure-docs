@@ -57,6 +57,7 @@ Use the scroll bar at the bottom of the table to view the "AS Path".
 
 You can create a virtual hub route and apply the route to the virtual hub route table. You can apply multiple routes to the virtual hub route table. This lets you set a route for destination VNet via an IP address (typically the Network Virtual Appliance (NVA) in a spoke VNet). For more information about NVAs, see [Route traffic from a virtual hub to an NVA](virtual-wan-route-table-portal.md). Note that these routes will not show up in the virtual hub effective route table. The virtual hub effective route table contains only the prefixes for local and remote hubs, plus the connected virtual network address space and routes learned via BGP.
 
+
 ### <a name="aboutdefaultroute"></a>About default route (0.0.0.0/0)
 
 A virtual hub has the ability to propagate a learned default route to a virtual network, a site-to-site VPN, and an ExpressRoute connection if the flag is ‘Enabled’ on the connection. This flag is visible when you edit a virtual network connection, a VPN connection, or an ExpressRoute connection. 'EnableInternetSecurity' is always false by default on Hub VNet, ExpressRoute, and VPN connections.
